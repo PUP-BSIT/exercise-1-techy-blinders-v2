@@ -56,6 +56,21 @@ const esparagoza: Movie = {
     }
 };
 
+const veslino: Movie = {
+    title: "The Godfather",
+    year: 1972,
+    director: "Francis Coppola",
+    genre: MovieGenre.ACTION,
+    print() {
+        console.log(`
+                Title: ${this.title},
+                Year: ${this.year},
+                Directed by: ${this.director},
+                Genre: ${this.genre}`);
+    }
+};
+
 mosquito.print();
 consultado.print();
 esparagoza.print();
+veslino.print();
