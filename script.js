@@ -25,5 +25,15 @@ var consultado = {
         console.log("\n                Title: ".concat(this.title, ",\n                Year: ").concat(this.year, ",\n                Directed by: ").concat(this.director, ",\n                Genre: ").concat(this.genre));
     }
 };
+var esparagoza = {
+    title: "Divergent",
+    year: 2014,
+    director: "Neil Burger",
+    genre: MovieGenre.SCIFI,
+    print: function () {
+        console.log("\n                Title: ".concat(this.title, ",\n                Year: ").concat(this.year, ",\n                Directed by: ").concat(this.director, ",\n                Genre: ").concat(this.genre));
+    }
+};
 mosquito.print();
 consultado.print();
+esparagoza.print();
