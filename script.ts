@@ -70,7 +70,22 @@ const veslino: Movie = {
     }
 };
 
+const piadozo: Movie = {
+    title: "Kid Kulafu",
+    year: 2015,
+    director: "Paul Soriano",
+    genre: MovieGenre.ACTION,
+    print() {
+        console.log(`
+                Title: ${this.title},
+                Year: ${this.year},
+                Directed by: ${this.director},
+                Genre: ${this.genre}`);
+    }
+};
+
 mosquito.print();
 consultado.print();
 esparagoza.print();
 veslino.print();
+piadozo.print();
