@@ -34,6 +34,16 @@ var esparagoza = {
         console.log("\n                Title: ".concat(this.title, ",\n                Year: ").concat(this.year, ",\n                Directed by: ").concat(this.director, ",\n                Genre: ").concat(this.genre));
     }
 };
+var veslino = {
+    title: "The Godfather",
+    year: 1972,
+    director: "Francis Coppola",
+    genre: MovieGenre.ACTION,
+    print: function () {
+        console.log("\n                Title: ".concat(this.title, ",\n                Year: ").concat(this.year, ",\n                Directed by: ").concat(this.director, ",\n                Genre: ").concat(this.genre));
+    }
+};
 mosquito.print();
 consultado.print();
 esparagoza.print();
+veslino.print();
