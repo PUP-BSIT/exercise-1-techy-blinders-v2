@@ -42,5 +42,20 @@ const consultado: Movie = {
     }
 };
 
+const esparagoza: Movie = {
+    title: "Divergent",
+    year: 2014,
+    director: "Neil Burger",
+    genre: MovieGenre.SCIFI,
+    print() {
+        console.log(`
+                Title: ${this.title},
+                Year: ${this.year},
+                Directed by: ${this.director},
+                Genre: ${this.genre}`);
+    }
+};
+
 mosquito.print();
 consultado.print();
+esparagoza.print();
