@@ -8,7 +8,7 @@ enum MovieGenre {
 
 type Movie = {
     title: string;
-    year: Date;
+    year: number;
     director: string;
     genre: MovieGenre;
     print(): void;
@@ -16,16 +16,31 @@ type Movie = {
 
 const mosquito: Movie = {
     title: "The Maze Runner",
-    year: new Date("2014"),
+    year: 2014,
     director: "Wes Ball",
     genre: MovieGenre.SCIFI,
     print() {
         console.log(`
                 Title: ${this.title},
-                Year: (${this.year.getFullYear()}),
+                Year: ${this.year},
+                Directed by: ${this.director},
+                Genre: ${this.genre}`);
+    }
+};
+
+const consultado: Movie = {
+    title: "John Wick",
+    year: 2014,
+    director: "Chad Stahelski",
+    genre: MovieGenre.ACTION,
+    print() {
+        console.log(`
+                Title: ${this.title},
+                Year: ${this.year},
                 Directed by: ${this.director},
                 Genre: ${this.genre}`);
     }
 };
 
 mosquito.print();
+consultado.print();
